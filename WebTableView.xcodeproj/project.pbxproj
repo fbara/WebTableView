@@ -13,9 +13,13 @@
 		AD73C37B1B4F607300776E69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD73C3791B4F607300776E69 /* Main.storyboard */; };
 		AD73C37D1B4F607300776E69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD73C37C1B4F607300776E69 /* Assets.xcassets */; };
 		AD73C3801B4F607300776E69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD73C37E1B4F607300776E69 /* LaunchScreen.storyboard */; };
+		AD73C3891B4F632C00776E69 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD73C3881B4F632C00776E69 /* TableViewController.m */; };
+		FF3BB87AE4E20EFFC2AE3661 /* libPods-WebTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBFB0F6F91BF83F28DB20BD /* libPods-WebTableView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5BE91B3E12E8E56DCF453B76 /* Pods-WebTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebTableView/Pods-WebTableView.release.xcconfig"; sourceTree = "<group>"; };
+		81086196E00518D15BE8B0DC /* Pods-WebTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebTableView/Pods-WebTableView.debug.xcconfig"; sourceTree = "<group>"; };
 		AD73C36D1B4F607300776E69 /* WebTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD73C3711B4F607300776E69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD73C3731B4F607300776E69 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,9 @@
 		AD73C37C1B4F607300776E69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD73C37F1B4F607300776E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD73C3811B4F607300776E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD73C3871B4F632C00776E69 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		AD73C3881B4F632C00776E69 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		FBBFB0F6F91BF83F28DB20BD /* libPods-WebTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3BB87AE4E20EFFC2AE3661 /* libPods-WebTableView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +52,8 @@
 			children = (
 				AD73C36F1B4F607300776E69 /* WebTableView */,
 				AD73C36E1B4F607300776E69 /* Products */,
+				CE4CFF7278902209BCCF0D37 /* Pods */,
+				F4B144F3AC6B75806B0069B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +72,8 @@
 				AD73C3741B4F607300776E69 /* AppDelegate.m */,
 				AD73C3761B4F607300776E69 /* ViewController.h */,
 				AD73C3771B4F607300776E69 /* ViewController.m */,
+				AD73C3871B4F632C00776E69 /* TableViewController.h */,
+				AD73C3881B4F632C00776E69 /* TableViewController.m */,
 				AD73C3791B4F607300776E69 /* Main.storyboard */,
 				AD73C37C1B4F607300776E69 /* Assets.xcassets */,
 				AD73C37E1B4F607300776E69 /* LaunchScreen.storyboard */,
@@ -79,6 +91,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CE4CFF7278902209BCCF0D37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81086196E00518D15BE8B0DC /* Pods-WebTableView.debug.xcconfig */,
+				5BE91B3E12E8E56DCF453B76 /* Pods-WebTableView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4B144F3AC6B75806B0069B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBBFB0F6F91BF83F28DB20BD /* libPods-WebTableView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD73C3841B4F607300776E69 /* Build configuration list for PBXNativeTarget "WebTableView" */;
 			buildPhases = (
+				FA6D726E0E1DE12948A2A250 /* Check Pods Manifest.lock */,
 				AD73C3691B4F607300776E69 /* Sources */,
 				AD73C36A1B4F607300776E69 /* Frameworks */,
 				AD73C36B1B4F607300776E69 /* Resources */,
+				EC28BB5573F7EBA9369AA642 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +175,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EC28BB5573F7EBA9369AA642 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebTableView/Pods-WebTableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA6D726E0E1DE12948A2A250 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AD73C3691B4F607300776E69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -152,6 +216,7 @@
 				AD73C3781B4F607300776E69 /* ViewController.m in Sources */,
 				AD73C3751B4F607300776E69 /* AppDelegate.m in Sources */,
 				AD73C3721B4F607300776E69 /* main.m in Sources */,
+				AD73C3891B4F632C00776E69 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +326,7 @@
 		};
 		AD73C3851B4F607300776E69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81086196E00518D15BE8B0DC /* Pods-WebTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WebTableView/Info.plist;
@@ -272,6 +338,7 @@
 		};
 		AD73C3861B4F607300776E69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE91B3E12E8E56DCF453B76 /* Pods-WebTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WebTableView/Info.plist;
@@ -300,6 +367,7 @@
 				AD73C3861B4F607300776E69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
